@@ -1,0 +1,70 @@
+Html{
+    cursor: url(imagens/seringa.png) 30 15, auto;
+    
+}
+.virus01{
+    width: 70px;
+    height: 60px;
+}
+.virus02{
+    width: 110px;
+    height: 90px;
+}
+.virus03{
+    width: 140px;
+    height:120px;
+}
+.ladoA{
+    transform:scaleX(1);
+}
+.ladoB{
+    transform:scaleX(-1);
+}
+.background1{
+    background-image: url(imagens/background.jpg);
+    background-repeat: no-repeat;
+    
+}
+/*.background2{
+    background-image: url(imagens/background2.jpg);
+    background-repeat: no-repeat;
+}*/
+.painel{
+    position:absolute;
+    padding:10px;
+    left:0px;
+    bottom: 0px;
+    border: solid 1px #fff;
+    background-color:#fff;
+    opacity: 0.7;
+    
+    
+}
+.vidas{
+    position: relative;
+}
+#vida1 {
+    width: 70px;
+    height: 80px;
+}
+#vida2 {
+    width: 70px;
+    height: 80px;
+}
+#vida3 {
+    width: 70px;
+    height: 80px;
+}
+#vida4{
+    width: 70px;
+    height: 80px;
+}
+
+.cronometro{
+    float:center;
+    font-size: 30px;
+    font-weight: bold;
+}
+#relogio{
+    width:30px;
+}

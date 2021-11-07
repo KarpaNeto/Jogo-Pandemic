@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="jogo.js"></script>
+    <title>No Pandemic</title>
+</head>
+
+<body class="background1">
+
+    <div class="painel">
+        
+        <div class="vidas">
+            <img src="imagens/vida-cheia.png" id="vida1">
+            <img src="imagens/vida-cheia.png" id="vida2">
+            <img src="imagens/vida-cheia.png" id="vida3">
+            <img src="imagens/vida-cheia.png" id="vida4">
+            
+            <div class="cronometro">
+                
+                
+                <img src="imagens/relogio.png" id="relogio"> Tempo Restante: <span id="meuCronometro"></span>
+                
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('meuCronometro').innerHTML = controlaTempo();
+        var criaVirus = setInterval(function () { posicaoAleatoria() }, dificulty());
+    </script>
+</body>
+
+</html>

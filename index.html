@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <title>No Pandemic</title>
+    <script>
+
+        function startGame() {
+            var escolhendoNivel = document.getElementById("level").value;
+            if (escolhendoNivel == "") {
+                alert("Choose a valid option!")
+            }
+            else {
+                window.location.href = "jogo.html?" + escolhendoNivel;
+            }
+
+        }
+    </script>
+</head>
+
+<body class="background1">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="d-flex justify-content-center">
+                    <img src="imagens/start.png">
+                </div>
+                <!--finalizando flex box-->
+            </div><!-- finalizando col-->
+        </div>
+        <!--finalizando row-->
+
+        <div class="row">
+            <div class="col">
+                <div class="d-flex justify-content-center">
+                    <div class="mb-2">
+                        <select class="form-control" id="level">
+                            <option value="">---Select---</option>
+                            <option value="easy">Easy</option>
+                            <option value="medium">Medium</option>
+                            <option value="hard">Hard</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-danger btn-lg" onclick="startGame()">Start Game
+                    </button>
+                </div>
+                <!--finalizando flex box-->
+            </div><!-- finalizando col-->
+        </div>
+        <!--finalizando row-->
+    </div>
+    <!--finalizando container-->
+
+</body>
+
+</html>
