@@ -47,7 +47,6 @@ function posicaoAleatoria() {
         document.getElementById("tempoVirus").remove();
         if (vidas >= 4) {
             window.location.href = "gameover.html";
-            clearInterval(criaVirus);
         }
         else {
             document.getElementById("vida" + vidas).src = "imagens/vida-vazia.png";
