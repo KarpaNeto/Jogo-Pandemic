@@ -45,8 +45,9 @@ function controlaTempo() {
 function posicaoAleatoria() {
     if (document.getElementById("tempoVirus")) {
         document.getElementById("tempoVirus").remove();
-        if (vidas > 4) {
+        if (vidas >= 4) {
             window.location.href = "gameover.html";
+            clearInterval(criaVirus);
         }
         else {
             document.getElementById("vida" + vidas).src = "imagens/vida-vazia.png";
@@ -54,8 +55,6 @@ function posicaoAleatoria() {
         }
 
     }
-
-
     var posx = Math.floor(Math.random() * largura) - 90;
     var posy = Math.floor(Math.random() * altura) - 90;
 
